@@ -5,3 +5,7 @@ function doPost(e) {
   sheet.appendRow([new Date(), d.orderId, d.customerName, d.phone, d.address, d.postcode, d.sku, d.items, d.qty, d.total, d.note, d.status]);
   return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
 }
+function doGet(e) {
+  return ContentService.createTextOutput("Leaf Hair API Ready");
+}
+
