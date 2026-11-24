@@ -1,6 +1,6 @@
 // ใส่ URL หลัง Deploy Apps Script / Publish CSV (ถ้ายังเป็น PASTE... ระบบจะเก็บใน localStorage เพื่อทดสอบ)
-const APPS_SCRIPT_URL='PASTE_APPS_SCRIPT_URL_HERE';
-const CSV_URL='PASTE_CSV_URL_HERE';
+const APPS_SCRIPT_URL='https://script.google.com/macros/s/AKfycbzfbdJnMOTkZYsb6HzIXA8NE47sxFaIizTyA8WA1tibX4yULTYqlLq4fXo3DqyMELnGQw/exec';
+const CSV_URL='https://docs.google.com/spreadsheets/d/e/2PACX-1vTcB8W32j-EYEyvEoWOY6pb9nCw-L2-jZq_1oZ2cEjZGvmeg-Qqncp5UA2CP2lxEInMDQtn8MbnWcdc/pub?gid=0&single=true&output=csv';
 const LOCAL=u=>u.startsWith('PASTE');
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
